@@ -1,0 +1,52 @@
+Given an array (or string), the task is to reverse the array/string.
+Examples : 
+ 
+
+Input  : arr[] = {1, 2, 3}
+Output : arr[] = {3, 2, 1}
+
+Input :  arr[] = {4, 5, 1, 2}
+Output : arr[] = {2, 1, 5, 4}
+
+Solution 1 -> Iterative Solution
+
+
+#include<iostream>
+using namespace std;
+int reverse( int arr[], int n)
+{
+int temp;
+
+n= sizeof(arr[]) / sizeof(arr[0]);
+
+for(int i=0;i<n;i++)
+{
+temp =arr[i];
+arr[i] = arr[n-1];
+arr[n-1]= temp;
+n--;
+}
+
+int main()
+{
+int t;
+cin>>t;
+
+for(i=0; i<t; i++);
+{
+cin>>a[i];
+}
+reverse(a,t);
+
+for(int i=0;i<t;i++)
+{
+cout<<a[i];
+}
+
+return 0;
+}
+
+
+
+
+
